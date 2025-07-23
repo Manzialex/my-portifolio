@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manzi Alex |  Portifolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="Logo" class="logo">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Services</a></li>
+                    <li><a href="#portifolio">Portifolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span> Manzi</span> Alex <br>from Kampala , Uganda</h1>
+            </div>
+        </div>
+
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                     <img src="images/about1.jpg" alt="About Me" class="about-img">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I’m passionate about building beautiful and responsive websites using HTML, CSS, and JavaScript.
+                         I also enjoy UI/UX designer with a passion for creating intuitive and
+                         engaging user experiences. With a background in graphic design 
+                         and a keen eye for detail, I strive to design interfaces that 
+                         are not only visually appealing but also user-friendly. My goal 
+                         is to bridge the gap between aesthetics and functionality, ensuring 
+                         that every design decision enhances the overall user journey.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab " id="skills">
+                        <ul>
+                            <li><span>Frontend Development</span> <br>HTML <br>CSS <br> JavaScript <br>Bootsrap</li>
+                            <li><span>UI/UX design</span> <br> Figma <br> Canva</li>
+                            <li><span>Other skills</span> <br> Git & github <br> Responsive design</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Current</span> <br>iam currently an internee at Crane Cloud uGANDA 
+                            <br> <br>July Sprint lead.
+                        <br> <br>Made various contribution on github.</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2023-2025</span> <br>BCS at IUEA</li>
+                            <li><span>2025</span> <br>UI/UX design at flux Academy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="projects">
+        <div class="container">
+          <h1 class="sub-title">My Services</h1>
+          <div class="services-list">
+                  <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Development</h2>
+                    <p>
+                       I develop fast, responsive, and accessible websites using
+                        HTML, CSS, JavaScript, and frameworks like Bootstrap. 
+                       I turn designs into fully functional, pixel-perfect code.
+                    </p>
+                    <a href="#">Learn more</a>
+                  </div>
+
+                    <div>
+                        <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Web Design</h2>
+                    <p>
+                       I craft visually stunning and responsive websites 
+                       that reflect your brand and keep users engaged.
+                        My designs are mobile-first, clean, and 
+                       built to convert visitors into customers.
+                    </p>
+                    <a href="#">Learn more</a>
+                  </div>
+
+                    <div>
+                  <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>
+                        I design seamless and intuitive user experiences that
+                         prioritize usability, clarity, and emotion. From wireframes 
+                         to final UI, I ensure every interaction feels natural
+                         and purposeful.
+                    </p>
+                    <a href="#">Learn more</a>
+                  </div>
+          </div>
+ </div>
+    </div>
+
+    <!----portfolio-->
+    <div id="portifolio">
+        <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="project-list">
+
+    <!-- Project 1: Perfume Website -->
+    <div class="project-card">
+      <img src="images/perfume.png" alt="Perfume Website">
+
+      <div class="layer">
+        <div>
+      <h3>Perfume Collection Website</h3>
+      <p>
+        A luxurious and responsive perfume brand website showcasing collections with elegant UI and smooth scroll-based product navigation.
+      </p>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Custom carousel slider</li>
+        <li>Dark theme design, mobile-friendly</li>
+      </ul>
+      </div>
+      <div class="project-links">
+        <a href="https://your-live-link.netlify.app" target="_blank">Live Demo</a>
+        <a href="https://github.com/yourusername/perfume-site" target="_blank">GitHub</a>
+      </div>
+    </div>
+    </div>
+
+    <!-- Project 2: Contributed Project -->
+    <div class="project-card">
+      <img src="images/crane.png" alt="Contributed Project Screenshot">
+      <div class="layer">
+        <div>
+      <h3>Open Source UI Kit Contributor</h3>
+      
+      <p>
+        Contributed to an open-source UI kit of crane cloud by modifying the landing page, open  buttons and improving responsive layouts.
+      </p>
+      <ul>
+        <li>GitHub Collaboration</li>
+        <li>HTML/CSS components</li>
+        <li>Pull requests & code reviews</li>
+      </ul>
+       </div>
+      <div class="project-links">
+        <a href="https://github.com/projectrepo/ui-kit" target="_blank">View on GitHub</a>
+      </div>
+     
+    </div>
+    </div>
+
+    <!-- Add more projects as needed -->
+
+        </div>
+
+        <a href="#" class="btn">see more</a>
+   </div>
+
+    </div>
+    
+    <script>
+
+
+const tablinks = document.getElementsByClassName("tab-links");
+const tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabName){
+
+    for( tablink of tablinks){
+        tablink.classList.remove("active-link");
+
+    }
+  for( tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+
+    }
+
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabName).classList.add("active-tab");
+}
+    </script>
+</body>
+</html>
