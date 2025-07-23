@@ -13,12 +13,15 @@
         <div class="container">
             <nav>
                 <img src="images/logo.png" alt="Logo" class="logo">
-                <ul class="nav-links">
+                <ul class="nav-links" id="sidemenu">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Services</a></li>
                     <li><a href="#portifolio">Portifolio</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" id="icon" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars open" id="icon" onclick="openMenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Web Developer</p>
@@ -178,7 +181,37 @@
    </div>
 
     </div>
-    
+
+    <!---contact-->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <a href="#"> <i class="fa-solid fa-paper-plane"></i>alex@gmail.com</a>
+          <p> <i class="fa-solid fa-square-phone"></i>0769474658</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+          <a href="#" class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+           <form>
+            <input type="text" name="Name" placeholder="your Name" required>
+            <input type="text" name="email" placeholder="your email" required>
+             <textarea name="message" rows="6" placeholder="your message"></textarea>
+            <button type="submit" class="btn btn2 btn3"> submit</button>
+           </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="copyright">
+      <p>copyright @ Manzi. Made by Manzi Alex</p>
+    </div>
     <script>
 
 
@@ -198,6 +231,17 @@ function opentab(tabName){
 
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabName).classList.add("active-tab");
+}
+    </script>
+    <script>
+  const sidemenu = document.getElementById("sidemenu");
+
+function openMenu(){
+  sidemenu.style.right = "0";
+}
+
+function closeMenu(){
+  sidemenu.style.right = "-200px";
 }
     </script>
 </body>

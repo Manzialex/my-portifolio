@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+html{
+    scroll-behavior:smooth;
+}
 body{
     background: #000;
     color: #fff;
@@ -65,7 +68,7 @@ nav ul li a:hover::after{
     margin-bottom: 20px;
 }
 .header-text h1 span{
-    color: #ff004f;
+    color:#ff004f;
 }
 
 /* About Section */
@@ -225,7 +228,22 @@ nav ul li a:hover::after{
    overflow: hidden;
    transition: height 0.5s;
 }
+.layer h3{
+ font-size: 20px;
+ margin-top: -30px;
+ margin-bottom: 10px;
+}
+.project-links{
+    
+    margin-top: 10px;
+}
+.project-links a{
+text-decoration: none;
 
+}
+.project-links a:hover{
+    color: #fff;
+}
 .project-card:hover .layer{
     height: 100%;
 }
@@ -244,4 +262,133 @@ nav ul li a:hover::after{
 }
 .btn:hover{
     background:#4397cb;
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left i{
+  color: #4397cb;
+  margin-right: 15px;
+  font-size: 25px;
+  padding: 10px;
+}
+.contact-left a{
+    color: #fff;
+    text-decoration: none;
+}
+.contact-left a:hover{
+    color: #4397cb;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+}
+.btn.btn2{
+    margin-left: 0;
+}
+.btn.btn2:hover{
+  color: #fff;
+}
+
+.contact-right form{
+    width: 100%;
+
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.btn.btn2.btn3{
+    background: #4397cb;
+    cursor: pointer;
+    padding-top: -20px;
+}
+.btn.btn2.btn3:hover{
+    background: #fff;
+    color: #4397cb;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 20px;
+    background: #262626;
+}
+
+
+
+/* css for small screen */
+#icon{
+    display: none;
+}
+@media screen and (max-width:600px) {
+    .header{
+        background-image: url(images/phone-img.png);
+    }
+    .header-text{
+         margin-top: 96%;
+         font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    #icon{
+    display: block;
+    font-size: 25px;
+}
+nav ul{
+    background: #4397cb;
+    position: fixed ;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+}
+nav ul li{
+    display: block;
+    margin-top: 30px;
+}
+ul #icon{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+.open{
+    padding-top: 18px;
+}
+
+.sub-title{
+    font-size: 40px;
+}
+.about-col-1,.about-col-2{
+    flex-basis: 100%;
+}
+.about-col-1{
+    margin-bottom: 20px;
+}
+.about-col-2{
+    font-size: 14px;
+}
+.tab-links{
+    font-size: 16px;
+    margin-right: 20px;
+}
+.contact-left, .contact-right{
+    flex-basis: 100%;
+}
 }
